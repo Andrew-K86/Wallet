@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@200;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/18f1d31aad.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1><i class="fas fa-wallet"></i>Wallet</h1>
+        <p>Twoj osobisty menedzer finansow.</p>
+    </header>
+    <main>
+        <section class="transactions">
+            <h2 class="title">Lista transakciji</h2>
+            <div class="transaction-list">
+                <div class="income-area">
+                    <h3>Przychod:</h3>
+                    <!-- <template class="additions"> -->
+                        <!-- <div class="transaction" id="0">
+                            <p class="transaction-name"><i class="fas fa-money-bill-wave"></i>Wyplata</p>
+                            <p class="transaction-amount">1000 zl<button class="delete"><i class="fas fa-times"></i></button>
+                            </p>
+                        </div> -->
+                    <!-- </template> -->
+                </div>
+
+                <div class="expenses-area">
+                    <h3>Wydatki:</h3>
+                    <!-- <template class="shopping"> -->
+                        <!-- <div class="transaction" id="1">
+                            <p class="transaction-name"><i class="fas fa-cart-arrow-down"></i>Zakupy</p>
+                            <p class="transaction-amount"> 200 zl <button class="delete"><i
+                                        class="fas fa-times"></i></button>
+                            </p>
+                        </div> -->
+                    <!-- </template> -->
+                    <!-- <template class="food"> -->
+                        <!-- <div class="transaction" id="2">
+                            <p class="transaction-name"><i class="fas fa-hamburger"></i>Jedzenie</p>
+                            <p class="transaction-amount"> 100 zl <button class="delete"><i
+                                        class="fas fa-times"></i></button>
+                            </p>
+                        </div> -->
+                    <!-- </template> -->
+                    <!-- <template class="cinema"> -->
+                        <!-- <div class="transaction" id="3">
+                            <p class="transaction-name"><i class="fas fa-film"></i>Kino</p>
+                            <p class="transaction-amount"> 50 zl <button class="delete"><i
+                                        class="fas fa-times"></i></button>
+                            </p>
+
+                        </div> -->
+                    <!-- </template> -->
+
+                </div>
+            </div>
+        </section>
+        <section class="option">
+            <div>
+                <h2 class="title">Dostepne srodki:</h2>
+                <p class="avaliable-money">0zl</p>
+            </div>
+            <div class="controls">
+                <button class="add-transaction"><i class="fas fa-plus"></i>Dodaj transakcje</button>
+                <button class="delete-all"><i class="far fa-trash-alt"></i>Usun wszystko</button>
+            </div>
+            <div class="style-selection">
+                <h2 class="title">Wybierz style</h2>
+                <div class="color-btn">
+                    <button class="light"></button>
+                    <button class="dark"></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="add-transaction-panel">
+        <h2 class="title">Dodaj nowa transakcje</h2>
+
+        <label for="name">Nazwa:</label>
+        <small>(podaj nazwe trasakcji)</small>
+        <input type="text" id="name">
+
+        <label for="amount">Kwota:</label>
+        <small>(podaj kwote transakciji, jesli odsjesz wydatek, postaw znak minusa na poczatku kwoty)</small>
+        <input type="number" id="amount">
+
+        <label for="category">Nazwa:</label>
+        <small>( [+] oznacza przychod, [-] oznacza wydatek)</small>
+        <select id="category">
+            <option value="none" selected disabled></option>
+            <option value="income">[+] Przychod</option>
+            <option value="shopping">[-] Zakupy</option>
+            <option value="food">[-] Jedzenie</option>
+            <option value="cinema">[-] Kino</option>
+        </select>
+        <div class="panel-btn">
+            <button class="save"><i class="fas fa-save"></i>Zapisz</button>
+            <button class="cancel"><i class="far fa-window-close"></i>Anuluj</button>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
